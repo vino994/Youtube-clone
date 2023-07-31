@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container{
+    padding:20px; 
+}
+header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    cursor: pointer;
+    background-color:white;
+}
+.logo{
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#youtube{
+    color: red;
+}
+.logo span #title{
+   margin-left: 5px;
+   color: black;
+}
+.searchbar{
+    
+    width: 500px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.body-content{
+    margin-top: 50px;
+}
+.searchbar .search{
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.search input{
+    width: 450px;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.search span{
+    margin-right: 10px;
+    color: grey;
+}
+.searchbar span{
+    font-size: 20px;
+}
+.suscribe-btn{
+     font-size: 20px;
+    padding: 10px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#icon-logo{
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+.body-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+.left-section{
+    height: auto;
+    width: 70%;
+    border: 1px solid black;    
+    border-radius: 10px;
+   
+}
+.banner{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    border-radius: 10px;
+}
+.banner video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.channel-details{
+    width: 100%;
+    height: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+.subscribe-details{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+.first-section{
+    width: 15%;
+    display: flex;
+    padding: 10px;
+   
+    align-items: center;
+    justify-content: space-between;
+}
+.first-section span i{
+    font-size: 30px;
+    margin-right: 10px;
+    color: red;
+}
+.first-section h4{
+    font-size: 20px;
+}
+.first-section p{
+    font-size: 10px;
+    color: #999;
+}
+.second-section{
+    width: 46%;
+    padding: 10px;
+   display: flex;
+   justify-content: space-around;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.like-button{
+    background-color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.like-button button{
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.like-button #num{
+    margin-left: 10px;
+}
+.like-button #dislike{
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+.share button{
+    padding: 10px 20px;
+    display: flex;
+    border-radius: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .download button{
+    padding: 10px 20px;
+    display: flex;        
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ .share button span{
+    margin-left: 10px;
+ }
+.right-section{
+    height:600px;
+    width: 30%;
+    border: 1px solid black; 
+    border-radius: 10px;   
+    padding: 10px;
+    overflow-x: hidden;
+}
+.carousel-box{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    padding: 10px 0px;
+    position: relative;
+}
+.carousel-box .carosel-section{
+    width: 200%;
+    padding: 10px 0px;
+    position: absolute;
+    left:5%;
+    top: 0;
+     transition: .5s;
+}
+.carousel-box .carosel-section ul{
+    display: flex;
+    list-style: none;
+}
+.carousel-box .carosel-section ul li{
+    margin: 0px 5px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.carousel-box .carosel-section ul li.active{
+    color: white;
+    background-color: black;
+}
+
+button{
+    padding: 5px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+ #right{
+    right: 0;
+    position: absolute;
+    top:25%;
+}
+#left{
+    left: 0;
+    position: absolute;
+    top:25%;
+    display: none;
+}
+.list-cate{
+    width: 100%;
+    height: auto;
+   
+}
+.list-cate .list-details{
+    width: 100%;
+    height: 150px;
+   
+    margin:5px 0;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    box-shadow: 0px 5px 5px grey;
+}
+
+
+.list-cate .list-details .img{
+    width: 55%;
+    margin-top: 10px;
+    height: 80%;
+    background-color: green;
+    border-radius: 10px;
+}
+.list-cate .list-details .img video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-details{
+    width: 60%;
+    padding: 5px;
+}
+.text-details h4{
+    padding-bottom: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-details p{
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
